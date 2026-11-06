@@ -1,0 +1,167 @@
+{
+    // Session
+    "icon_theme": "Catppuccin Mocha",
+    "buffer_font_family": "JetBrains Mono",
+    "ui_font_family": "JetBrains Mono",
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "git_panel": {
+        "dock": "left",
+    },
+    "agent": {
+        "dock": "right",
+        "threads_sidebar": {
+            "position": "right",
+        },
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "session": {
+        "trust_all_worktrees": true,
+    },
+
+    // Editor
+    "base_keymap": "VSCode",
+    "ui_font_size": 16.0,
+    "buffer_font_size": 16.0,
+
+    // Theme
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "Catppuccin Mocha",
+    },
+
+    // General editor settings
+    "format_on_save": "on",
+    "tab_size": 4,
+    "hard_tabs": false,
+    "relative_line_numbers": "enabled",
+    "show_whitespaces": "selection",
+
+    "indent_guides": {
+        "enabled": true,
+    },
+
+    "terminal": {
+        "detect_venv": {
+            "on": {
+                "directories": [".venv"],
+                "activate_script": "default",
+            },
+        },
+    },
+    "languages": {
+        "Python": {
+            "tab_size": 4,
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "preferred_line_length": 88,
+
+            "language_servers": ["pyrefly", "ruff"],
+
+            "formatter": {
+                "language_server": {
+                    "name": "ruff",
+                },
+            },
+
+            "code_actions_on_format": {
+                "source.organizeImports.ruff": true,
+            },
+        },
+        "TypeScript": {
+            "tab_size": 2,
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "preferred_line_length": 100,
+        },
+        "TSX": {
+            "tab_size": 2,
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "preferred_line_length": 100,
+        },
+        "JavaScript": {
+            "tab_size": 2,
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "preferred_line_length": 100,
+        },
+        "PHP": {
+            "tab_size": 4,
+            "hard_tabs": false,
+            "format_on_save": "on",
+            "language_servers": [
+                "intelephense",
+                "!phpactor",
+                "!phptools",
+                "!phpantom",
+                "...",
+            ],
+        },
+    },
+
+    // Pyrefly
+    "lsp": {
+        "pyrefly": {
+            "settings": {
+                "python": {
+                    "check": {
+                        "all": true,
+                    },
+                },
+            },
+        },
+
+        // Ruff
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "lineLength": 88,
+                    "lint": {
+                        "select": ["E", "F", "I", "UP", "B", "SIM"],
+                    },
+                },
+            },
+        },
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "suggest": {
+                        "completeFunctionCalls": true,
+                    },
+                    "inlayHints": {
+                        "parameterNames": {
+                            "enabled": "all",
+                        },
+                        "variableTypes": {
+                            "enabled": true,
+                        },
+                        "functionLikeReturnTypes": {
+                            "enabled": true,
+                        },
+                    },
+                },
+            },
+        },
+    },
+    "debugger": {
+        "dock": "right",
+        "save_breakpoints": true,
+    },
+    "inlay_hints": {
+        "show_value_hints": true,
+    },
+    "which_key": {
+        "enabled": true,
+    },
+    "snippet_sort_order": "top",
+}
