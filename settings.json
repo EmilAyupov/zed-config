@@ -152,6 +152,14 @@
                 },
             },
         },
+        "symfony-language-tools": {
+            "initialization_options": {
+                "workspaceTrust": true,
+            },
+            "settings": {
+                "environment": "test",
+            },
+        },
     },
     "debugger": {
         "dock": "right",
@@ -164,4 +172,5 @@
         "enabled": true,
     },
     "snippet_sort_order": "top",
+    "code_lens": "on",
 }
